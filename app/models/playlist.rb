@@ -1,12 +1,12 @@
 class Playlist < ApplicationRecord
 
 
-  has_many :groups, through: :GroupsPlaylists
-  has_many :GroupsPlaylists
+  has_many :groups, through: :GroupPlaylists
+  has_many :GroupPlaylists
 
 
-  has_many :songs, through: :PlaylistsSongs
-  has_many :PlaylistsSongs
+  has_many :songs, through: :PlaylistSongs
+  has_many :PlaylistSongs
 
 
   belongs_to :user

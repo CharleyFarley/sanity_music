@@ -1,7 +1,7 @@
 class Song < ApplicationRecord
 
-  has_many :playlists, through: :PlaylistsSongs
-  has_many :PlaylistsSongs
+  has_many :playlists, through: :PlaylistSongs
+  has_many :PlaylistSongs
 
   belongs_to :artist 
 

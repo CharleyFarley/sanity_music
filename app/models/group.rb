@@ -1,10 +1,10 @@
 class Group < ApplicationRecord
 
-  has_many :users, through: :GroupsUsers
-  has_many :GroupsUsers
+  has_many :users, through: :GroupUsers
+  has_many :GroupUsers
 
 
-  has_many :playlists, through: :GroupsPlaylists
-  has_many :GroupsPlaylists
+  has_many :playlists, through: :GroupPlaylists
+  has_many :GroupPlaylists
 
 end
